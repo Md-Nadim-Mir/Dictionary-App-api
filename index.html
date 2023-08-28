@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./banner.jpg" type="image/x-icon">
+
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind and dasiUI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style -->
+
+    <style>
+
+         body{
+
+            height: 900px;
+            background-color: #ae9cff;
+         }
+
+    </style>
+
+</head>
+
+<body >
+    <!-- header part -->
+
+    <header>
+
+        <h1 class="text-3xl md:text-5xl text-center font-bold text-white pt-10 md:pt-16">Dictionary App</h1>
+
+    </header>
+
+
+    <!-- main part -->
+
+ <main  class="grid justify-center mt-16 pb-16">
+
+
+      <!-- speaker -->
+
+      <audio id="sound" src=""></audio>
+
+
+    <div  class="card  w-[300px] md:w-[500px] mx-2    bg-white shadow-xl ">
+
+
+            <!-- banner image -->
+            
+            <figure class="pt-3"><img src="./logo.png" alt="Shoes" /></figure>
+            <div class="card-body">
+
+
+         <div class="flex justify-center items-center gap-4">
+
+
+             <!-- input field -->
+
+             <input id="input_field" style="border:none; outline: none; border-bottom: 2px solid #ae9cff;" type="text" placeholder="type word ....." class="text-center text-black font-bold p-3  rounded-sm w-3/4 md:w-full" value="source">
+
+             <!-- search button -->
+ 
+             <button id="search_btn" class="btn btn-info bg-[#ae9cff;]">Search</button>
+
+        </div>
+
+
+        <div id="result" class=" pt-4  px-3">
+
+
+           
+
+           
+
+
+
+
+        </div>
+
+
+
+
+             
+
+         
+   </div>
+
+ </main>
+
+
+    <!-- script added -->
+    <script src="api.js"></script>
+
+</body>
+
+</html>
